@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 580">
+  <defs>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <rect width="440" height="580" rx="16" fill="#0f0f13"/>
+
+  <!-- mode tabs -->
+  <g transform="translate(70, 28)">
+    <rect x="0" y="0" width="300" height="42" rx="21" fill="#1a1a22"/>
+    <rect x="4" y="4" width="97" height="34" rx="17" fill="#e0584a"/>
+    <text x="52" y="26" text-anchor="middle" fill="#fff" font-size="13" font-family="sans-serif">专注</text>
+    <text x="152" y="26" text-anchor="middle" fill="#888" font-size="13" font-family="sans-serif">短休</text>
+    <text x="250" y="26" text-anchor="middle" fill="#888" font-size="13" font-family="sans-serif">长休</text>
+  </g>
+
+  <!-- timer circle -->
+  <g transform="translate(220, 200)">
+    <!-- bg ring -->
+    <circle cx="0" cy="0" r="116" fill="none" stroke="#1e1e2a" stroke-width="6"/>
+    <!-- progress ring (~60%) -->
+    <circle cx="0" cy="0" r="116" fill="none" stroke="#e0584a" stroke-width="6"
+            stroke-dasharray="728" stroke-dashoffset="291" stroke-linecap="round"
+            transform="rotate(-90)"/>
+    <!-- time text -->
+    <text x="0" y="4" text-anchor="middle" fill="#fff" font-size="52" font-family="monospace" font-weight="300">15:24</text>
+    <text x="0" y="28" text-anchor="middle" fill="#888" font-size="12" font-family="sans-serif" letter-spacing="1">专注</text>
+  </g>
+
+  <!-- controls -->
+  <g transform="translate(220, 340)">
+    <circle cx="-84" cy="0" r="20" fill="#1e1e2a"/>
+    <text x="-84" y="6" text-anchor="middle" fill="#aaa" font-size="17" font-family="sans-serif">↻</text>
+
+    <circle cx="0" cy="0" r="30" fill="#4a9e6e" filter="url(#shadow)"/>
+    <text x="0" y="5" text-anchor="middle" fill="#fff" font-size="12" font-family="sans-serif">❚❚</text>
+
+    <circle cx="84" cy="0" r="20" fill="#1e1e2a"/>
+    <text x="84" y="6" text-anchor="middle" fill="#aaa" font-size="17" font-family="sans-serif">⏭</text>
+  </g>
+
+  <!-- stats -->
+  <g transform="translate(220, 398)">
+    <text x="-40" y="0" text-anchor="middle" fill="#fff" font-size="24" font-weight="600" font-family="sans-serif">3</text>
+    <text x="-40" y="16" text-anchor="middle" fill="#777" font-size="11" font-family="sans-serif">完成</text>
+    <text x="40" y="0" text-anchor="middle" fill="#fff" font-size="24" font-weight="600" font-family="sans-serif">75m</text>
+    <text x="40" y="16" text-anchor="middle" fill="#777" font-size="11" font-family="sans-serif">总专注</text>
+  </g>
+
+  <!-- settings -->
+  <text x="220" y="452" text-anchor="middle" fill="#555" font-size="17" font-family="sans-serif">⚙</text>
+
+  <!-- settings panel -->
+  <g transform="translate(70, 468)">
+    <rect x="0" y="0" width="300" height="94" rx="14" fill="#1a1a22"/>
+    <text x="16" y="24" fill="#bbb" font-size="12" font-family="sans-serif">专注时长 (分)</text>
+    <rect x="236" y="8" width="48" height="24" rx="6" fill="#121218" stroke="#333" stroke-width="1"/>
+    <text x="260" y="25" text-anchor="middle" fill="#e0e0e0" font-size="13" font-family="sans-serif">25</text>
+
+    <text x="16" y="52" fill="#bbb" font-size="12" font-family="sans-serif">短休时长 (分)</text>
+    <rect x="236" y="36" width="48" height="24" rx="6" fill="#121218" stroke="#333" stroke-width="1"/>
+    <text x="260" y="53" text-anchor="middle" fill="#e0e0e0" font-size="13" font-family="sans-serif">5</text>
+
+    <text x="16" y="80" fill="#bbb" font-size="12" font-family="sans-serif">长休时长 (分)</text>
+    <rect x="236" y="64" width="48" height="24" rx="6" fill="#121218" stroke="#333" stroke-width="1"/>
+    <text x="260" y="81" text-anchor="middle" fill="#e0e0e0" font-size="13" font-family="sans-serif">15</text>
+  </g>
+</svg>
